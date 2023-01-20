@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    transition: .3s;
+    scroll-behavior: smooth;
+}
+
+.Card{
+    @apply w-48 h-64 shadow-md rounded-lg flex-none transition-all transform hover:-translate-y-4 hover:shadow-xl;
+}
+
+.Card-img{
+    @apply w-full h-3/5 rounded-t-lg bg-cover;
+}
+
+.Card-content{
+    @apply bg-secondary w-full h-2/5 rounded-b-lg p-4 dark:bg-gray-700;
+}
+
+.Card-content-2{
+    @apply bg-white w-full h-2/5 rounded-b-lg p-4 dark:bg-gray-800 dark:text-gray-300;
+}
+
+.Card-title{
+    @apply text-white font-bold text-xl select-none;
+}
+
+.Card-title-2{
+    @apply text-tertiary font-bold text-xl select-none;
+}
+
+.Card-description{
+    @apply text-white text-sm select-none;
+}
+
+.Card-description-2{
+    @apply text-tertiary text-sm select-none;
+}
+
+
+.RentCard-title{
+    @apply text-white font-semibold text-3xl px-8 pt-8 pb-2;
+}
+
+.FAQS-Q{
+    @apply text-xl font-medium text-primary dark:text-white;
+}
+
+.FAQS-A{
+    @apply text-base pt-2 dark:text-white;
+}
